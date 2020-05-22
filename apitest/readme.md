@@ -49,7 +49,8 @@ Expected response:
 ```
 
 1. Check Status code is `400`
-2. Check `full_name` is `["Ensure this field has no more than 180 characters."]` from response
+2. Check `full_name` is `["Ensure this field has no more than 180 characters."]`
+ from response
 
 
 ### Test Case 3:
@@ -68,7 +69,8 @@ Expected response:
 ```
 
 1. Check Status code is `400`
-2. Check `full_name` is `["This field is required."]` from response
+2. Check `full_name` is
+ `["This field is required."]` from response
 
 
 
