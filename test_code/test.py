@@ -1,6 +1,7 @@
 from addsimple.adding import add
+from divide.divide import divide
 import requests
-from apitest.api import focus
+
 
 
 def test_add():
@@ -12,6 +13,27 @@ def test_add2():
     given_value=-1
     expected=0
     assert add(given_value)==expected
+
+
+def test_divide():
+    arg1 = 10
+    arg2 = 0
+    expected = 'You cannot divide 0!'
+    assert divide(arg1, arg2) == expected
+
+
+def test_divide1():
+    arg1 = 3
+    arg2 = 2
+    expected = 1.5
+    assert divide(arg1, arg2) == expected
+
+
+def test_divide2():
+    arg1 = 4
+    arg2 = 2
+    expected = 2.0
+    assert divide(arg1, arg2) == expected
 
 
 def test_focus():
